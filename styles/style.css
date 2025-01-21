@@ -264,7 +264,8 @@ img {
 .fundo-2 {
     background-color:var(--cor-fundo-2);
     width: 100%;
-    min-height: 550px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -488,7 +489,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 10px;
 }
 
 .container-review {
@@ -699,7 +700,7 @@ img {
             height: 50%;
         }
         .container-slider{
-            scale: 0.8;
+            scale: 0.9;
         }
     }
 
@@ -711,8 +712,8 @@ img {
             align-items: center;
         }
     }
-    @media (max-width: 441px){
+    @media (max-width: 478px){
         .container-slider{
-            scale: 0.5;
+            scale: 0.7;
         }
     }
