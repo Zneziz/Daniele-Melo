@@ -47,3 +47,29 @@ btnPrev.addEventListener('click', prevSlider);
 // Exibindo o console para verificar sliders
 console.log(slider);
 
+//trocar icon
+        const icon = document.getElementById('icon-arrow-left');
+        // Evento para mouse entrar no botão
+        btnPrev.addEventListener('mouseenter', () => {
+            icon.classList.remove('bi-caret-left');
+            icon.classList.add('bi-caret-left-fill');
+        });
+
+        // Evento para mouse sair do botão
+        btnPrev.addEventListener('mouseleave', () => {
+            icon.classList.remove('bi-caret-left-fill');
+            icon.classList.add('bi-caret-left');
+        });
+
+        const icon2 = document.getElementById('icon-arrow-right');
+        // Evento para mouse entrar no botão
+        btnNext.addEventListener('mouseenter', () => {
+            icon2.classList.remove('bi-caret-right');
+            icon2.classList.add('bi-caret-right-fill');
+        });
+
+        // Evento para mouse sair do botão
+        btnNext.addEventListener('mouseleave', () => {
+            icon2.classList.remove('bi-caret-right-fill');
+            icon2.classList.add('bi-caret-right');
+        });
