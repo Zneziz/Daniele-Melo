@@ -116,6 +116,13 @@ color: red;
     color: #0072ff;
  transition: .8s;
 }
+header{
+    position: fixed;
+    width: 100%;
+}
+.main{
+    padding-top: 197px;
+}
 .nav {
     max-width: 1280px;
     height: 135px;
