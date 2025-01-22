@@ -89,6 +89,8 @@ main{
 .header {
     background: var(--cor-header) ;
     padding-inline: 16px;
+    position: fixed;
+    width: 100%;
 }
 #linkedin-icon:hover{
  color:#0072ff;
@@ -116,10 +118,7 @@ color: red;
     color: #0072ff;
  transition: .8s;
 }
-header{
-    position: fixed;
-    width: 100%;
-}
+
 .main{
     padding-top: 197px;
 }
@@ -734,6 +733,9 @@ footer{
 
     @media (max-width: 760px){
 
+        .main{
+            padding-top: 162px;
+        }
         .footer-infos-container{
             flex-direction: column;
         }
