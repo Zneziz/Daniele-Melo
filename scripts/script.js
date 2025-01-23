@@ -7,11 +7,14 @@ hamburger.addEventListener("click", () => nav.classList.toggle("active"));
 
 //carrosel//
 const slider = document.querySelectorAll('.slider');
+const slider2 = document.querySelectorAll('.slider-2')
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
 
 let currentSlide = 0;
+let currentSlide2 = 0;
 
+//silder 1
 function hideSlider() {
     slider.forEach(item => item.classList.remove('on'));
 }
@@ -40,9 +43,40 @@ function prevSlider() {
     showSlider();
 }
 
+//slider 2
+function hideSlider2() {
+    slider2.forEach(item => item.classList.remove('on'));
+}
+
+function showSlider2() {
+    slider2[currentSlide2].classList.add('on');
+}
+
+function nextSlider2() {
+    hideSlider2();
+    if (currentSlide2 === slider2.length - 1) {
+        currentSlide2 = 0;
+    } else {
+        currentSlide2++;
+    }
+    showSlider2();
+}
+
+function prevSlider2() {
+    hideSlider2();
+    if (currentSlide2 === 0) {
+        currentSlide2 = slider2.length - 1;
+    } else {
+        currentSlide2--;
+    }
+    showSlider2();
+}
+
 // Associando os botões às funções corretas
 btnNext.addEventListener('click', nextSlider);
 btnPrev.addEventListener('click', prevSlider);
+btnNext.addEventListener('click', nextSlider2);
+btnPrev.addEventListener('click', prevSlider2);
 
 // Exibindo o console para verificar sliders
 console.log(slider);
