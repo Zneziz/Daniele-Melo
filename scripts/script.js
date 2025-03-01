@@ -81,7 +81,7 @@ btnPrev.addEventListener('click', prevSlider2);
 // Exibindo o console para verificar sliders
 console.log(slider);
 
-//trocar icon
+//trocar icon do google 
         const icon = document.getElementById('icon-arrow-left');
         // Evento para mouse entrar no botão
         btnPrev.addEventListener('mouseenter', () => {
@@ -107,3 +107,5 @@ console.log(slider);
             icon2.classList.remove('bi-caret-right-fill');
             icon2.classList.add('bi-caret-right');
         });
+
+//arcodion
