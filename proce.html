@@ -13,7 +13,6 @@
 <body>
 
 
-
     <header class="header">
         <nav class="nav-redes">
             <div class="nav-list-email">
@@ -50,9 +49,7 @@
 
     <main class="main">
 
-
     
-        <div class="espaco"></div>
 
 
 
@@ -60,17 +57,76 @@
 
         <div class="fundo-4">
 
-
-
             <div class="container-all-accordions">
-                <p class="nichos-nomes">Estetica</p>
+                <h2>POPULARES</h2>
+
+                <div class="container-slider">
+                    <button id="prev-button">
+                        <i class="bi bi-caret-left" id="icon-arrow-left"></i>
+                    </button>
+                    <div class="container-slides">
+                        <div class="slides" id="slides">
+                            <div class="slider" >
+                                <div class="container-img-retrato-2">
+                                    <div class="img-retrato-2">
+                                        <div class="img">
+                                            <img src="files/rinolado.png" alt="">
+                                        </div>
+                                    </div>
+                                    <a href="">Rinomodelação</a>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="container-img-retrato-2">
+                                    <div class="img-retrato-2">
+                                        <div class="img">
+                                            <img src="files/rinolado.png" alt="">
+                                        </div>
+                                    </div>
+                                    <a href="">Rinomodelação2222</a>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="container-img-retrato-2">
+                                    <div class="img-retrato-2">
+                                        <div class="img">
+                                            <img src="files/rinolado.png" alt="">
+                                        </div>
+                                    </div>
+                                    <a href="">Rinomodelação</a>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="container-img-retrato-2">
+                                    <div class="img-retrato-2">
+                                        <div class="img">
+                                            <img src="files/rinolado.png" alt="">
+                                        </div>
+                                    </div>
+                                    <a href="">Rinomodelação</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="next-button">
+                        <i class="bi bi-caret-right" id="icon-arrow-right"></i>
+                    </button>
+                </div>
+                
+
+
+
+
+                <h2 class="nichos-nomes">Estetica</h2>
                     <div class="container-accordion">
                         <div class="accordion">
                             <button class="accordion-header">
                                 <span class="titulo-arccodion">
                                      Endolaser / Endolifting 
                                 </span>
-                                <i class="fa-solid fa-chevron-down arrow"></i>
+                                <div class="arrow-acc">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
                             </button>
                 
                             <div class="accordion-body">
@@ -150,7 +206,7 @@
 
 
 
-                <p class="nichos-nomes">Estetica</p>
+                <h2 class="nichos-nomes">Estetica</h2>
                     <div class="container-accordion">
                         <div class="accordion">
                             <button class="accordion-header">
@@ -274,15 +330,49 @@
     </main>
     
     <script>
-    const accordions = document.querySelectorAll('.accordion');
+        const accordions = document.querySelectorAll('.accordion');
 
-    accordions.forEach(accordion => {
-        accordion.addEventListener('click', () => {
-            const body = accordion.querySelector('.accordion-body');
-            body.classList.toggle('active');
-            console.log(body)
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', () => {
+
+                const body = accordion.querySelector('.accordion-body');
+                const arrow = accordion.querySelector('.arrow-acc');
+
+                body.classList.toggle('active');
+                arrow.classList.toggle('rotate-acc');
+
+                console.log(body)
+            })
         })
-    })
+
+
+
+
+        const icon = document.getElementById('icon-arrow-left');
+        
+        btnPrev.addEventListener('mouseenter', () => {
+            icon.classList.remove('bi-caret-left');
+            icon.classList.add('bi-caret-left-fill');
+        });
+
+       
+        btnPrev.addEventListener('mouseleave', () => {
+            icon.classList.remove('bi-caret-left-fill');
+            icon.classList.add('bi-caret-left');
+        });
+
+        const icon2 = document.getElementById('icon-arrow-right');
+        
+        btnNext.addEventListener('mouseenter', () => {
+            icon2.classList.remove('bi-caret-right');
+            icon2.classList.add('bi-caret-right-fill');
+        });
+
+        
+        btnNext.addEventListener('mouseleave', () => {
+            icon2.classList.remove('bi-caret-right-fill');
+            icon2.classList.add('bi-caret-right');
+        });
     </script>
 </body>
 </html>
