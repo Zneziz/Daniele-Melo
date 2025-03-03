@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="files/icon.png"> 
     <script src="scripts/script.js" defer></script> 
+    <script src="scripts/slider.js" defer></script>
     <title>Espaço Daniele Melo</title>
 </head>
 <body>
@@ -27,15 +28,15 @@
         </nav>
         <nav class="nav dis-flex-colum jus-ali-center">
             <div class="logo">
-            <a href="index.html" id="logo">Daniele Melo</a>
+            <a href="" id="logo">Daniele Melo</a>
             <hr>
             </div>
             <button class="hamburger"></button>
             <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proce.html">Procedimentos</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=551127646214">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=551127646214" target="_blank">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -127,7 +128,7 @@
                 </div>
                 <div>
                     <div class="imagems-row">
-                        <div class="container-img-retrato-2">
+                        <div class="container-img-retrato-2 rotate-anti-hor">
                             <div class="img-retrato-2">
                                 <div class="img">
                                     <img src="files/rinolado.png" alt="">
@@ -135,7 +136,7 @@
                             </div>
                             <a href="">Rinomodelação</a>
                         </div>
-                        <div class="container-img-retrato-2">
+                        <div class="container-img-retrato-2 rotate-hor">
                             <div class="img-retrato-2">
                                 <div class="img">
                                     <img src="files/botox.png" alt="">
@@ -143,7 +144,7 @@
                             </div>
                             <a href="">Botox</a>
                         </div>
-                        <div class="container-img-retrato-2">
+                        <div class="container-img-retrato-2 rotate-anti-hor">
                             <div class="img-retrato-2">
                                 <div class="img">
                                     <img src="files/bumbum.png" alt="">
@@ -230,14 +231,102 @@
                 </a>
                 </div>
 
-                <button id="prev-button">
-                    <i class="bi bi-caret-left" id="icon-arrow-left"></i>
-                </button>
-
-                    
-                <button id="next-button">
-                    <i class="bi bi-caret-right" id="icon-arrow-right"></i>
-                </button>
+                <div class="container-slider">
+                    <button id="prev-button">
+                        <i class="bi bi-caret-left" id="icon-arrow-left"></i>
+                    </button>
+                    <div class="container-slides-review">
+                        <div class="slides" id="slides">
+                            <div class="slider" >
+                                <div src="=" alt="=" class="review-card"><!--1-->
+                                    <div class="pessoa-review">
+                                        <a >
+                                        <img  src="files/review-shirlen.png" alt="">
+                                        <p>Shirlene Sam</p>
+                                        </a>
+                                    </div>
+                                    <div class="nota-review">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-review">
+                                        <p>A equipe toda é maravilhosa.
+                                            Lá vc sai com o cabelo do jeito que quiser.
+                                            Parabéns a todos pelo excelente profissionalismo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div src="=" alt="=" class="review-card"><!--2-->
+                                    <div class="pessoa-review">
+                                        <a >
+                                        <img src="files/reviewmaria.png" alt="">
+                                        <p>Maria de Fátima Madeira</p>
+                                        </a>
+                                    </div>
+                                    <div class="nota-review">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-review">
+                                        <p>Atendimento muito carinhoso,  e profissional!.
+                                             E os resultados maravilhosos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div src="=" alt="=" class="review-card"><!--3-->
+                                    <div class="pessoa-review">
+                                        <a >
+                                        <img src="files/review-junior.png" alt="">
+                                        <p>Junior Barros</p>
+                                        </a>
+                                    </div>
+                                    <div class="nota-review">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-review">
+                                        <p>Ki lugar incrível 🤩 super indicamos eu e minha esposa amamos o trabalho de vcs, sem contar com o ambiente e os funcionário que são excelentes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div src="=" alt="=" class="review-card"><!--2-->
+                                    <div class="pessoa-review">
+                                        <a >
+                                        <img src="files/reviewmaria.png" alt="">
+                                        <p>Maria de Fátima Madeira</p>
+                                        </a>
+                                    </div>
+                                    <div class="nota-review">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-review">
+                                        <p>Atendimento muito carinhoso,  e profissional!.
+                                             E os resultados maravilhosos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="next-button">
+                        <i class="bi bi-caret-right" id="icon-arrow-right"></i>
+                    </button>
+                </div>
         </div>
         </div>
 
@@ -273,9 +362,9 @@
             <div class="footer-infos-container">
                 <div class="footer-infos">
                     <div class="lnks-uteis"><h4>links Uteis</h4>
-                        <a href="">Duvidas frequentes</a>
+                        <a href="duvidas.html">Duvidas frequentes</a>
                         <br>
-                        <a href="">Procedimnetos</a>
+                        <a href="proce.html">Procedimnetos</a>
                     </div> 
                     <div class="contato"><h4>Contato</h4>
                         <a href="https://api.whatsapp.com/send?phone=551127646214" target="_blank">11 2764-6214</a>
