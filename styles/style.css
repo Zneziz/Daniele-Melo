@@ -1235,6 +1235,9 @@ footer{
             width: 430px;
             overflow: hidden;
         }
+        .img-retrato-3{
+            scale: 0.9;
+        }
     }
     @media (max-width: 386px){
         .container-container-slider{
@@ -1260,7 +1263,9 @@ footer{
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            scale: 0.9;
         }
+
         .container-slider {
             scale: 0.7;
         }
