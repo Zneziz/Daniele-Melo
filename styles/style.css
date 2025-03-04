@@ -628,6 +628,7 @@ img {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .container-slides{
     width: 720px;
@@ -736,7 +737,7 @@ img {
     align-content: center;
     height: 220px;
     border-radius: 7px;
-    background-color: whitesmoke;
+    background-color: rgba(240, 239, 239, 0.993);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
