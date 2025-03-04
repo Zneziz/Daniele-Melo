@@ -65,6 +65,7 @@ h2{
     color: var(--cor-texto-header);
     animation: fadeIn 2s ease-in-out forwards;
     animation: fadeIn .7s ease-in-out forwards;
+    margin-top: 70px;
 }
 body{
     position: relative;
@@ -616,14 +617,28 @@ img {
     scale: 0.9;
     margin-bottom: 40px;
 }
+.container-slider-review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    scale: 0.9;
+    margin-bottom: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .container-slides{
-    width: 715px;
+    width: 720px;
     overflow: hidden;
 }
 .container-slides-review{
     width: 870px;
+    height: 230px;
     overflow: hidden;
     scale: 0.9;
+    
 }
 .slides{
     display: flex;
@@ -739,7 +754,19 @@ img {
     align-items: center;
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 40px;
 }
+#prev-button{
+    position: relative;
+    left: 17px;
+    z-index: 2;
+}
+#next-button{
+    position: relative;
+    left: -20px;
+}
+
 #prev-button i, #next-button i {
    font-size: 40px;
    position: relative;
@@ -782,6 +809,28 @@ img {
     align-items: center;
     display: flex;
     background-color: var(--cor-fundo-4);
+    border: 1px solid white;
+    padding: 10px;
+}
+.container-container-pop{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 550px;
+    width: 80%;
+    background-color: var(--cor-fundo-3);
+    padding: 10px;
+    margin: 30px;
+}
+.container-pop{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    background-color: var(--cor-fundo-3);
     border: 1px solid white;
     padding: 10px;
 }
@@ -1278,6 +1327,10 @@ footer{
             
             scale: 0.8;
         }
+        .container-slider-review{
+            
+            scale: 0.8;
+        }
         .logo-footer {
             margin: auto;
         }
@@ -1312,6 +1365,10 @@ footer{
         .img-retrato-3{
             scale: 0.9;
         }
+        .container-container-pop{
+            
+            width: 100%;
+        }
     }
     @media (max-width: 386px){
         .container-container-slider{
@@ -1329,6 +1386,9 @@ footer{
     @media (max-width: 800px){
         .container-slider {
             scale: 0.7;
+        }
+        .container-slider-review{
+            scale: 0.65;
         }
     }
     @media (max-width: 1200px){
