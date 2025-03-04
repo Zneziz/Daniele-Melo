@@ -116,11 +116,14 @@ main{
     position: fixed;
     width: 100%;
     /*border-bottom: 1px solid var(--cor-texto-header);*/
+}
+.header-translatey{
+    transform: translateY(-60px);
     transition: 0.3s ease-in-out;
 }
-/*.header-translatey{
-    transform: translateY(-30px);
-}*/
+.header-untranslatey{
+    transform: translateY( 0px);
+}
 
 .main{
     padding-top: 197px;
@@ -1129,7 +1132,7 @@ footer{
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 110vh;
             background: var(--cor-header);
             clip-path: circle(100px at 90% -15%);
             transition: 1s ease-out;
@@ -1137,6 +1140,8 @@ footer{
             justify-content: space-around;
             align-items: center;
             gap: 0;
+            padding-bottom: 70px;
+            padding-top: 60px;
             pointer-events: none;
             overflow: hidden;
             z-index: 99;
